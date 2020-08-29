@@ -8,7 +8,9 @@ public class ListsToFromArrays {
     static Character[] charVals1 = {'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '#', '@', '&'};
 
     public static void main(String[] args) {
-        // initialize a JCF List from an array of primitives
+        // initialize a JCF List from a conventional array of references
+        System.out.print("This program shows various conversions between ");
+        System.out.println("conventional arrays and the List<> containers");
         List<Integer> int_list1 = new ArrayList<>(Arrays.asList(intVals1));
 
         Integer[] intVals2 = {2, 4, 6, 8, 10, 12, 14};
