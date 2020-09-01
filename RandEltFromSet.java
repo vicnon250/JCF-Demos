@@ -27,7 +27,7 @@ public class RandEltFromSet {
          * destroyed each time the function is called;
          * not a big deal for a small set of numeric
          * values, but could be a performance drag when
-         * done on a large set of strings
+         * done on a large set of strings, for example
          */
         List<Integer> listOfInts = new ArrayList<>(setOfInts);
         return listOfInts.get(rand.nextInt(listOfInts.size()));
@@ -40,10 +40,10 @@ public class RandEltFromSet {
          * the set is and doesn't require a lot of
          * redundant copying over & over
          */
-        int randNdx = rand.nextInt(setOfInts.size());
+        int stopLoopAtThisValue = rand.nextInt(setOfInts.size());
         int count = 0;
         for(int val : setOfInts) {
-            if (count == randNdx) {
+            if (count == stopLoopAtThisValue) {
                 return val;
             }
             count++;
