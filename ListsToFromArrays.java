@@ -37,5 +37,13 @@ public class ListsToFromArrays {
             System.out.print(c + "\t");
         }
         System.out.println(); // end the line
+        
+        // from a string to a List<Character>
+        char[] superWord = "Supercalifragilisticexpialidocious".toCharArray();
+        List<Character> char_list3 = new ArrayList<>();
+        for (char c : superWord) {
+            char_list3.add(c);
+        }
+        System.out.println(char_list3); // print the ArrayList
     }
 }
